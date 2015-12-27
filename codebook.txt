@@ -5,93 +5,96 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 
 
-There are 30 subjects that contributed to the raw data set where each subject performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing accelerometer and gyroscope 3-axial device.
+There are 30 subjects that contributed to the raw data set where each subject performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing accelerometer and gyroscope 3-axial device. 
+
+
 
 
 =================
 The variable names in the result.txt file are as follows
 
- [1] "subject"                        
- [2] "activity_descriptor"             
- [3] "tBodyAcc-mean()-X"              
- [4] "tBodyAcc-mean()-Y"              
- [5] "tBodyAcc-mean()-Z"              
- [6] "tBodyAcc-std()-X"               
- [7] "tBodyAcc-std()-Y"               
- [8] "tBodyAcc-std()-Z"               
- [9] "tGravityAcc-mean()-X"           
-[10] "tGravityAcc-mean()-Y"           
-[11] "tGravityAcc-mean()-Z"           
-[12] "tGravityAcc-std()-X"            
-[13] "tGravityAcc-std()-Y"            
-[14] "tGravityAcc-std()-Z"            
-[15] "tBodyAccJerk-mean()-X"          
-[16] "tBodyAccJerk-mean()-Y"          
-[17] "tBodyAccJerk-mean()-Z"          
-[18] "tBodyAccJerk-std()-X"           
-[19] "tBodyAccJerk-std()-Y"           
-[20] "tBodyAccJerk-std()-Z"           
-[21] "tBodyGyro-mean()-X"             
-[22] "tBodyGyro-mean()-Y"             
-[23] "tBodyGyro-mean()-Z"             
-[24] "tBodyGyro-std()-X"              
-[25] "tBodyGyro-std()-Y"              
-[26] "tBodyGyro-std()-Z"              
-[27] "tBodyGyroJerk-mean()-X"         
-[28] "tBodyGyroJerk-mean()-Y"         
-[29] "tBodyGyroJerk-mean()-Z"         
-[30] "tBodyGyroJerk-std()-X"          
-[31] "tBodyGyroJerk-std()-Y"          
-[32] "tBodyGyroJerk-std()-Z"          
-[33] "tBodyAccMag-mean()"             
-[34] "tBodyAccMag-std()"              
-[35] "tGravityAccMag-mean()"          
-[36] "tGravityAccMag-std()"           
-[37] "tBodyAccJerkMag-mean()"         
-[38] "tBodyAccJerkMag-std()"          
-[39] "tBodyGyroMag-mean()"            
-[40] "tBodyGyroMag-std()"             
-[41] "tBodyGyroJerkMag-mean()"        
-[42] "tBodyGyroJerkMag-std()"         
-[43] "fBodyAcc-mean()-X"              
-[44] "fBodyAcc-mean()-Y"              
-[45] "fBodyAcc-mean()-Z"              
-[46] "fBodyAcc-std()-X"               
-[47] "fBodyAcc-std()-Y"               
-[48] "fBodyAcc-std()-Z"               
-[49] "fBodyAcc-meanFreq()-X"          
-[50] "fBodyAcc-meanFreq()-Y"          
-[51] "fBodyAcc-meanFreq()-Z"          
-[52] "fBodyAccJerk-mean()-X"          
-[53] "fBodyAccJerk-mean()-Y"          
-[54] "fBodyAccJerk-mean()-Z"          
-[55] "fBodyAccJerk-std()-X"           
-[56] "fBodyAccJerk-std()-Y"           
-[57] "fBodyAccJerk-std()-Z"           
-[58] "fBodyAccJerk-meanFreq()-X"      
-[59] "fBodyAccJerk-meanFreq()-Y"      
-[60] "fBodyAccJerk-meanFreq()-Z"      
-[61] "fBodyGyro-mean()-X"             
-[62] "fBodyGyro-mean()-Y"             
-[63] "fBodyGyro-mean()-Z"             
-[64] "fBodyGyro-std()-X"              
-[65] "fBodyGyro-std()-Y"              
-[66] "fBodyGyro-std()-Z"              
-[67] "fBodyGyro-meanFreq()-X"         
-[68] "fBodyGyro-meanFreq()-Y"         
-[69] "fBodyGyro-meanFreq()-Z"         
-[70] "fBodyAccMag-mean()"             
-[71] "fBodyAccMag-std()"              
-[72] "fBodyAccMag-meanFreq()"         
-[73] "fBodyBodyAccJerkMag-mean()"     
-[74] "fBodyBodyAccJerkMag-std()"      
-[75] "fBodyBodyAccJerkMag-meanFreq()" 
-[76] "fBodyBodyGyroMag-mean()"        
-[77] "fBodyBodyGyroMag-std()"         
-[78] "fBodyBodyGyroMag-meanFreq()"    
-[79] "fBodyBodyGyroJerkMag-mean()"    
-[80] "fBodyBodyGyroJerkMag-std()"     
-[81] "fBodyBodyGyroJerkMag-meanFreq()"
+ [1] "subject"               1 of 30 subjects                
+ [2] "activity_descriptor"   1 of 6 activities
+                         
+ [3] "tBodyAcc-mean()-X"     average value across all measurements for a given subject on a given task         
+ [4] "tBodyAcc-mean()-Y"     average value across all measurements for a given subject on a given task          
+ [5] "tBodyAcc-mean()-Z"     average value across all measurements for a given subject on a given task          
+ [6] "tBodyAcc-std()-X"      average value across all measurements for a given subject on a given task          
+ [7] "tBodyAcc-std()-Y"      average value across all measurements for a given subject on a given task          
+ [8] "tBodyAcc-std()-Z"      average value across all measurements for a given subject on a given task          
+ [9] "tGravityAcc-mean()-X"  average value across all measurements for a given subject on a given task          
+[10] "tGravityAcc-mean()-Y"   average value across all measurements for a given subject on a given task         
+[11] "tGravityAcc-mean()-Z"   average value across all measurements for a given subject on a given task         
+[12] "tGravityAcc-std()-X"     average value across all measurements for a given subject on a given task        
+[13] "tGravityAcc-std()-Y"     average value across all measurements for a given subject on a given task 
+[14] "tGravityAcc-std()-Z"     average value across all measurements for a given subject on a given task       
+[15] "tBodyAccJerk-mean()-X"   average value across all measurements for a given subject on a given task        
+[16] "tBodyAccJerk-mean()-Y"   average value across all measurements for a given subject on a given task        
+[17] "tBodyAccJerk-mean()-Z"   average value across all measurements for a given subject on a given task        
+[18] "tBodyAccJerk-std()-X"    average value across all measurements for a given subject on a given task        
+[19] "tBodyAccJerk-std()-Y"    average value across all measurements for a given subject on a given task        
+[20] "tBodyAccJerk-std()-Z"    average value across all measurements for a given subject on a given task        
+[21] "tBodyGyro-mean()-X"      average value across all measurements for a given subject on a given task        
+[22] "tBodyGyro-mean()-Y"      average value across all measurements for a given subject on a given task       
+[23] "tBodyGyro-mean()-Z"      average value across all measurements for a given subject on a given task        
+[24] "tBodyGyro-std()-X"       average value across all measurements for a given subject on a given task       
+[25] "tBodyGyro-std()-Y"       average value across all measurements for a given subject on a given task        
+[26] "tBodyGyro-std()-Z"       average value across all measurements for a given subject on a given task        
+[27] "tBodyGyroJerk-mean()-X"  average value across all measurements for a given subject on a given task        
+[28] "tBodyGyroJerk-mean()-Y"  average value across all measurements for a given subject on a given task        
+[29] "tBodyGyroJerk-mean()-Z"  average value across all measurements for a given subject on a given task        
+[30] "tBodyGyroJerk-std()-X"   average value across all measurements for a given subject on a given task        
+[31] "tBodyGyroJerk-std()-Y"   average value across all measurements for a given subject on a given task        
+[32] "tBodyGyroJerk-std()-Z"   average value across all measurements for a given subject on a given task        
+[33] "tBodyAccMag-mean()"       average value across all measurements for a given subject on a given task       
+[34] "tBodyAccMag-std()"        average value across all measurements for a given subject on a given task       
+[35] "tGravityAccMag-mean()"    average value across all measurements for a given subject on a given task       
+[36] "tGravityAccMag-std()"     average value across all measurements for a given subject on a given task        
+[37] "tBodyAccJerkMag-mean()"   average value across all measurements for a given subject on a given task       
+[38] "tBodyAccJerkMag-std()"    average value across all measurements for a given subject on a given task      
+[39] "tBodyGyroMag-mean()"      average value across all measurements for a given subject on a given task       
+[40] "tBodyGyroMag-std()"       average value across all measurements for a given subject on a given task       
+[41] "tBodyGyroJerkMag-mean()"  average value across all measurements for a given subject on a given task       
+[42] "tBodyGyroJerkMag-std()"    average value across all measurements for a given subject on a given task      
+[43] "fBodyAcc-mean()-X"         average value across all measurements for a given subject on a given task      
+[44] "fBodyAcc-mean()-Y"         average value across all measurements for a given subject on a given task      
+[45] "fBodyAcc-mean()-Z"         average value across all measurements for a given subject on a given task      
+[46] "fBodyAcc-std()-X"          average value across all measurements for a given subject on a given task      
+[47] "fBodyAcc-std()-Y"          average value across all measurements for a given subject on a given task      
+[48] "fBodyAcc-std()-Z"          average value across all measurements for a given subject on a given task      
+[49] "fBodyAcc-meanFreq()-X"      average value across all measurements for a given subject on a given task     
+[50] "fBodyAcc-meanFreq()-Y"      average value across all measurements for a given subject on a given task     
+[51] "fBodyAcc-meanFreq()-Z"      average value across all measurements for a given subject on a given task     
+[52] "fBodyAccJerk-mean()-X"      average value across all measurements for a given subject on a given task     
+[53] "fBodyAccJerk-mean()-Y"      average value across all measurements for a given subject on a given task     
+[54] "fBodyAccJerk-mean()-Z"      average value across all measurements for a given subject on a given task     
+[55] "fBodyAccJerk-std()-X"       average value across all measurements for a given subject on a given task     
+[56] "fBodyAccJerk-std()-Y"       average value across all measurements for a given subject on a given task     
+[57] "fBodyAccJerk-std()-Z"       average value across all measurements for a given subject on a given task     
+[58] "fBodyAccJerk-meanFreq()-X"   average value across all measurements for a given subject on a given task    
+[59] "fBodyAccJerk-meanFreq()-Y"   average value across all measurements for a given subject on a given task    
+[60] "fBodyAccJerk-meanFreq()-Z"   average value across all measurements for a given subject on a given task    
+[61] "fBodyGyro-mean()-X"          average value across all measurements for a given subject on a given task    
+[62] "fBodyGyro-mean()-Y"          average value across all measurements for a given subject on a given task    
+[63] "fBodyGyro-mean()-Z"          average value across all measurements for a given subject on a given task    
+[64] "fBodyGyro-std()-X"           average value across all measurements for a given subject on a given task    
+[65] "fBodyGyro-std()-Y"           average value across all measurements for a given subject on a given task    
+[66] "fBodyGyro-std()-Z"           average value across all measurements for a given subject on a given task    
+[67] "fBodyGyro-meanFreq()-X"      average value across all measurements for a given subject on a given task   
+[68] "fBodyGyro-meanFreq()-Y"      average value across all measurements for a given subject on a given task    
+[69] "fBodyGyro-meanFreq()-Z"      average value across all measurements for a given subject on a given task    
+[70] "fBodyAccMag-mean()"          average value across all measurements for a given subject on a given task    
+[71] "fBodyAccMag-std()"           average value across all measurements for a given subject on a given task     
+[72] "fBodyAccMag-meanFreq()"      average value across all measurements for a given subject on a given task    
+[73] "fBodyBodyAccJerkMag-mean()"  average value across all measurements for a given subject on a given task    
+[74] "fBodyBodyAccJerkMag-std()"   average value across all measurements for a given subject on a given task    
+[75] "fBodyBodyAccJerkMag-meanFreq()" average value across all measurements for a given subject on a given task 
+[76] "fBodyBodyGyroMag-mean()"        average value across all measurements for a given subject on a given task 
+[77] "fBodyBodyGyroMag-std()"         average value across all measurements for a given subject on a given task 
+[78] "fBodyBodyGyroMag-meanFreq()"    average value across all measurements for a given subject on a given task 
+[79] "fBodyBodyGyroJerkMag-mean()"    average value across all measurements for a given subject on a given task 
+[80] "fBodyBodyGyroJerkMag-std()"     average value across all measurements for a given subject on a given task 
+[81] "fBodyBodyGyroJerkMag-meanFreq()" average value across all measurements for a given subject on a given task 
 
 
 
