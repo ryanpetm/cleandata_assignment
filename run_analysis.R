@@ -1,4 +1,4 @@
-
+# read in txt files to independent data frames.
 data_subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt")
 data_X_test <- read.table("UCI HAR Dataset/test/X_test.txt")
 data_y_test <- read.table( "UCI HAR Dataset/test/y_test.txt")
@@ -14,7 +14,7 @@ subject <- rbind(data_subject_test, data_subject_train)
 X <- rbind(data_X_test, data_X_train)
 y<- rbind(data_y_test, data_y_train)
 
-# label X,y,subject
+# label X,y,subject dataframes
 names(X) <- data_features[,2]
 names(y) <- c("activity")
 names(subject) <- c("subject")
@@ -35,7 +35,7 @@ data_set_1 <- cbind(subject,data_frame(activity_descriptor),X_new)
 rm(list=setdiff(ls(), "data_set_1"))
 
 
-#group data_set_1 by subject
+
 subject_data <- group_by(data_set_1, subject)
 
 #average of each variable for each activity and each subject
